@@ -1,0 +1,16 @@
+<h3>Demo Pipes</h3>
+<p>Valeur de base : {{prop1}}</p>
+<p>Uppercase pipe : {{prop1 | uppercase}}</p>
+<p>Lowercase pipe : {{prop1 | lowercase}}</p>
+<p>Titlecase pipe : {{prop1 | titlecase}}</p>
+<hr />
+<p>Valeur de base : {{prop2}}</p>
+<p>Number pipe : {{prop2 | number : '1.1-2'}}</p>
+<p>Currency pipe : {{prop2 | currency : ''}}</p>
+<hr />
+<p>Valeur de base : {{prop3}}</p>
+<p>Date Pipe : {{prop3 | date : 'dd-MM-yyyy hh:mm:ss'}}</p>
+
+<p>Pipe custom toCelsius : {{prop2 | temperature : 'toc' | number : '1.0-0'  }}</p>
+<p>Pipe custom toFahrenheit : {{prop2 | temperature : 'tof'}}</p>
+<p>Pipe custom erreur : {{prop2 | temperature : 'truc'}}</p>

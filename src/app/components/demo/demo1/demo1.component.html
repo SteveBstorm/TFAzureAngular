@@ -1,0 +1,12 @@
+<h3>Demo Binding</h3>
+
+<h4>Binding One way</h4>
+<p>Contenu de ma prop : {{ maProp }}</p>
+
+<h4>Binding Two ways</h4>
+<input type="text" [(ngModel)]="maProp">
+
+<h4>Event Binding + Attribute Binding</h4>
+<p>Valeur : {{nbr}}</p>
+<button (click)="ajout()" [disabled]="nbr >=10" >+</button>
+<button (click)="retrait()" [disabled]="nbr <= 0">-</button>
