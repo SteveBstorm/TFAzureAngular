@@ -11,6 +11,9 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FormsModule } from '@angular/forms';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { TemperaturePipe } from './shared/pipes/temperature.pipe';
+import { ExercicesComponent } from './components/exercices/exercices.component';
+import { Exo1Component } from './components/exercices/exo1/exo1.component';
+import { TotimePipe } from './shared/pipes/totime.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { TemperaturePipe } from './shared/pipes/temperature.pipe';
     Demo1Component,
     NavComponent,
     Demo2Component,
-    TemperaturePipe
+    TemperaturePipe,
+    ExercicesComponent,
+    Exo1Component,
+    TotimePipe
   ],
   imports: [
     BrowserModule,
