@@ -1,0 +1,16 @@
+<h3>Démo @Input/@Output</h3>
+
+<h4>Composant appelé</h4>
+<app-enfant [title]="titrePourEnfant"
+            [nbr]=18
+            (monEvent)="reactionDeLEnfant($event)" 
+            (gerard)="reactionDeLEnfant($event)"
+>
+<p style="color : green">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat eaque numquam expedita voluptates harum. Odio alias assumenda sint esse necessitatibus sed dolor quae placeat, ullam, ipsum itaque illum quasi?
+</p>
+</app-enfant>
+
+<hr />
+<h4>Composant appelant</h4>
+<p>Propriété en attente : {{maProp}}</p>

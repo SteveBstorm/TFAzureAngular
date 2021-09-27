@@ -17,6 +17,8 @@ import { TotimePipe } from './shared/pipes/totime.pipe';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { SurlignerDirective } from './shared/directives/surligner.directive';
+import { Demo5Component } from './components/demo/demo5/demo5.component';
+import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SurlignerDirective } from './shared/directives/surligner.directive';
     TotimePipe,
     Demo3Component,
     Demo4Component,
-    SurlignerDirective
+    SurlignerDirective,
+    Demo5Component,
+    EnfantComponent
   ],
   imports: [
     BrowserModule,
