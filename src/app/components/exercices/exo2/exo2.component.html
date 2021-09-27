@@ -1,0 +1,10 @@
+<h3>Shopping List</h3>
+Nouvel Article : <input type="text" [(ngModel)]="nouvelArticle"> 
+<button (click)="ajoutArticle()">Ajouter</button>
+
+<hr />
+<app-exo2-list [liste]="listeArticle"
+               (deleteEvent)="supprimerArticle($event)"
+>
+
+</app-exo2-list>

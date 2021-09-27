@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeauthService } from 'src/app/services/fakeauth.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  isConnected : boolean = false
+
+  constructor(
+    private _authService : FakeauthService
+  ) { }
 
   ngOnInit(): void {
+    this.isConnected = this._authService.isConnected
   }
 
 }

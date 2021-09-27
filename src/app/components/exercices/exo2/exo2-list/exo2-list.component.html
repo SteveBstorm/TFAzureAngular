@@ -1,0 +1,10 @@
+<div style="border: dashed 1px black">
+    <h4>Liste de course</h4>
+    <hr />
+    <ul>
+        <li *ngFor="let article of liste; let i = index">
+            {{article}} &nbsp; 
+            <button (click)="supprimer(i)">Supprimer</button>
+        </li>
+    </ul>
+</div>

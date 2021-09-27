@@ -19,6 +19,10 @@ import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { SurlignerDirective } from './shared/directives/surligner.directive';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
 import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component';
+import { Exo2Component } from './components/exercices/exo2/exo2.component';
+import { Exo2ListComponent } from './components/exercices/exo2/exo2-list/exo2-list.component';
+import { Demo6Component } from './components/demo/demo6/demo6.component';
+import { FakeauthService } from './services/fakeauth.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component
     Demo4Component,
     SurlignerDirective,
     Demo5Component,
-    EnfantComponent
+    EnfantComponent,
+    Exo2Component,
+    Exo2ListComponent,
+    Demo6Component
   ],
   imports: [
     BrowserModule,
