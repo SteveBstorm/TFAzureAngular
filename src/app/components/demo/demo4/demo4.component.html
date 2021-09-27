@@ -1,0 +1,36 @@
+<h3>Structural Directives</h3>
+<h4>NGIF</h4>
+<div style="border : 1px black solid">
+    <div style="border-bottom: 1px black solid;" (click)="toggle()">
+        <p style="cursor : pointer;">Click ici</p>
+    </div>
+    <div appSurligner *ngIf="isToggled">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi modi eius provident adipisci pariatur itaque consequatur maiores laboriosam sequi quod a voluptate quo culpa, ratione nemo quae laborum perferendis totam?</p>
+    </div>
+    <div *ngIf="isToggled; else elseTemplate">
+        blabla
+    </div>
+    <ng-template #elseTemplate>
+        truc
+    </ng-template>
+
+</div>
+
+<hr />
+<h4>NgFor</h4>
+<ul>
+    <li *ngFor="let item of liste; let i = index; let impair = odd">
+        <p [ngClass]="{classe : impair}">{{i+1}} - {{item}}</p>
+    </li>
+</ul>
+
+<hr />
+<h4>NgSwitch</h4>
+<input type="text" [(ngModel)]="maProp">
+
+<div [ngSwitch]="maProp">
+    <div *ngSwitchCase="1">Javascript</div>
+    <div *ngSwitchCase="2">Typescript</div>
+    <div *ngSwitchCase="3">C#</div>
+    <div *ngSwitchDefault>Tapez 1 2 ou 3</div>
+</div>

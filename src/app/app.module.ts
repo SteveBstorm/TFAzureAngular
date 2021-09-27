@@ -14,6 +14,9 @@ import { TemperaturePipe } from './shared/pipes/temperature.pipe';
 import { ExercicesComponent } from './components/exercices/exercices.component';
 import { Exo1Component } from './components/exercices/exo1/exo1.component';
 import { TotimePipe } from './shared/pipes/totime.pipe';
+import { Demo3Component } from './components/demo/demo3/demo3.component';
+import { Demo4Component } from './components/demo/demo4/demo4.component';
+import { SurlignerDirective } from './shared/directives/surligner.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { TotimePipe } from './shared/pipes/totime.pipe';
     TemperaturePipe,
     ExercicesComponent,
     Exo1Component,
-    TotimePipe
+    TotimePipe,
+    Demo3Component,
+    Demo4Component,
+    SurlignerDirective
   ],
   imports: [
     BrowserModule,
